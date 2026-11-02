@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    container_name: github-actions-lab-compose
+    ports:
+      - "8001:8000"
+    restart: unless-stopped
